@@ -128,11 +128,8 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Campus AI Backend", version="4.0.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://ai-chatbot-meac-8vli421v5-sravya233s-projects.vercel.app",
-        "https://ai-chatbot-meac.vercel.app",
-    ],
+    allow_origins=["*"]
+    
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
