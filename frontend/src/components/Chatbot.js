@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Message from "./Message";
 import VoiceButton from "./VoiceButton";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://ai-chatbot-8teo.onrender.com";
 
 function Chatbot() {
   const [message, setMessage]     = useState("");
