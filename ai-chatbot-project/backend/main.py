@@ -128,8 +128,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Campus AI Backend", version="4.0.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"]
-    
+    allow_origins=["*"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
